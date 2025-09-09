@@ -1,12 +1,6 @@
-// // Typing Animation
-// var i = 0;
-// var txt = 'Lorem ipsum dummy text blabla.';
-// var speed = 50;
+// Home / Introduction Modal Box: Functionality
+// ...
 
-// function typeWriter() {
-//     if (i < txt.length) {
-//         document.getElementById("demo").innerHTML += txt.charAt(i);
-//         i++;
-//         setTimeout(typeWriter, speed);
-//     }
-// }
+
+// Show / Hide Sections in Main Container
+// ...

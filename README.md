@@ -1,4 +1,7 @@
-# 25t3-profile
+# DevSoc 25T3 Trainee Application
+
+- Progress: Ongoing
+- Deadline: 12th September Friday
 
 # Editor's Note
 ---
