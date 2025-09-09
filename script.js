@@ -25,61 +25,30 @@ sleepBtn.onclick = function() {
     main[0].style.display = "block";
 }
 
-document.getElementById("about_me").style.display = "none";
+
 // Show / Hide Sections in Main Container
 // - On button click, show relevant section and hide others
-// Check for button click
-var home = document.getElementById("home_btn");
-home.onclick = function() {
-    document.getElementById("home").style.display = "block";
-    document.getElementById("about_me").style.display = "none";
-    document.getElementById("interests").style.display = "none";
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("extras").style.display = "none";
-    document.getElementById("contact").style.display = "none";
+
+// Array of IDs
+var sections = ["home", "about_me", "interests", "projects", "extras", "contact"];
+
+// Helper to show one section and hide others
+function showSection(sectionId) {
+    sections.forEach(function(id) {
+        if (id === sectionId) {
+            document.getElementById(id).style.display = "block";
+        } else {
+            document.getElementById(id).style.display = "none";
+        }
+    });
 }
-var about_me = document.getElementById("about_me_btn");
-about_me.onclick = function() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("about_me").style.display = "block";
-    document.getElementById("interests").style.display = "none";
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("extras").style.display = "none";
-    document.getElementById("contact").style.display = "none";
-}
-var interests = document.getElementById("interests_btn");
-interests.onclick = function() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("about_me").style.display = "none";
-    document.getElementById("interests").style.display = "block";
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("extras").style.display = "none";
-    document.getElementById("contact").style.display = "none";
-}
-var projects = document.getElementById("projects_btn");
-projects.onclick = function() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("about_me").style.display = "none";
-    document.getElementById("interests").style.display = "none";
-    document.getElementById("projects").style.display = "block";
-    document.getElementById("extras").style.display = "none";
-    document.getElementById("contact").style.display = "none";
-}
-var extras = document.getElementById("extras_btn");
-extras.onclick = function() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("about_me").style.display = "none";
-    document.getElementById("interests").style.display = "none";
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("extras").style.display = "block";
-    document.getElementById("contact").style.display = "none";
-}
-var contact = document.getElementById("contact_btn");
-contact.onclick = function() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("about_me").style.display = "none";
-    document.getElementById("interests").style.display = "none";
-    document.getElementById("projects").style.display = "none";
-    document.getElementById("extras").style.display = "none";
-    document.getElementById("contact").style.display = "block";
-}
+
+// Attach click handlers to nav buttons
+sections.forEach(function(id) {
+    var btn = document.getElementById(id + "_btn");
+    if (btn) {
+        btn.onclick = function() {
+            showSection(id);
+        };
+    }
+});

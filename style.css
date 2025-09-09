@@ -70,7 +70,6 @@ nav {
   /* Style box */
   border-radius: 14px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 1), 0 2px 6px 0 rgba(0, 0, 0, 1);
-  /* top: 0%; Need this? */
   left: 6%;
   z-index: 10;
 }
@@ -100,21 +99,7 @@ nav li {
   padding: 20% 0;
 }
 
-
-
 /* Handle the appearance of contents */
-#about-me {
-  display: none;
-}
-#interests {
-  display: none;
-}
-#projects {
-  display: none;
-}
-#extras {
-  display: none;
-}
-#contact {
+#about_me, #interests, #projects, #extras, #contact {
   display: none;
 }
