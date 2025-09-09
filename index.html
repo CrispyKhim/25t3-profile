@@ -7,14 +7,18 @@
     <title>Profile | DevSoc 25T3 Trainee Application</title>
 </head>
 <body>
-    <!-- Home / Introduction Modal Box??? -->
-
+    <!-- Home / Introduction -->
+    <div id="intro">
+        <h1>Getting tired?</h1>
+        <button type="button" id="intro_btn_sleep">Sleep...</button>
+    </div>
 
 
 
     <!-- Navigation Sidebar -->
     <nav>
         <ol>
+            <li><button type="button" id="intro_btn_wake">Wake up...</button></li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#interests">Interests</a></li>
@@ -27,9 +31,18 @@
 
     <!-- Flexbox Container -->
     <main>
+        <!-- Flexbox Item: Default -->
+        <div id="default">
+            <h1>Hello There</h1>
+            <p>Welcome to my personal website!</p>
+            <p>This website is my entry to DevSoc's Trainee Application for 25T3! The theme, "Dreams", was to be incorporated in the website.</p>
+            <p>I took the artistic liberty to use dream motifs and visual elements to design the website.</p>
+            <p>Use the navigation on the sidebar to learn more about me! 😁</p>
+        </div>
+
         <!-- Flexbox Item: About Me -->
         <div id="about-me">
-            <h1>text</h1>
+            <h1>About Me</h1>
             <p>contents go hereaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
         </div>
 
@@ -57,5 +70,7 @@
             <p>contents go hereaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
         </div>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

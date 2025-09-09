@@ -4,9 +4,17 @@
 /* Global Style */
 * {
   font-family: Coming Soon;
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  
+  /* Prevent scrolling outside the container */
+  overflow: hidden;
 }
 
 body {
@@ -19,8 +27,6 @@ body {
 
   /* Containers outline */
   /* for debugging */
-  margin: 2%;
-  padding: 2%;
   border: 2px solid black;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 1), 0 2px 6px 0 rgba(0, 0, 0, 1);
   background-color: lightgrey;
@@ -75,10 +81,33 @@ nav li {
 }
 
 
-/* Default hide contents */
-/* #about-me {
+/* 
+  Style Contents Section
+*/
+
+/* Introduction Screen */
+#intro {
+  height: 100%;
+  width: 100%;
+  /* z-index: 5; */
+
+  /* Style background */
+  background-color: lightgrey;
+  text-align: center;
+  margin: auto;
+  /* Might need to adjust this padding... */
+  padding: 20% 0;
+}
+
+
+
+/* Handle the appearance of contents */
+/* #default {
   display: none;
 } */
+#about-me {
+  display: none;
+}
 #interests {
   display: none;
 }
