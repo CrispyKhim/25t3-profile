@@ -26,11 +26,16 @@ body {
   justify-content: center;
   align-items: center;
 
-  /* Containers outline */
-  /* for debugging */
+  /* Containers outline for debugging if needed */
   border: 2px solid black;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 1), 0 2px 6px 0 rgba(0, 0, 0, 1);
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  
+  /* Night Sky: Background Image */
+  /* Sourced from: https://unsplash.com/s/photos/night-sky */
+  background-image: url("images/night.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -49,7 +54,8 @@ main {
   margin: auto;
   max-width: 60%;
   
-  background-color: grey;
+  /* Background transparent */
+  background: rgba(128, 128, 128, 0.8);
   border-radius: 14px;
 }
 
@@ -97,8 +103,6 @@ main {
 }
 
 
-
-
 /*
   Navigation Sidebar
 */
@@ -106,7 +110,6 @@ nav {
   position: sticky;
   float: left;
   width: 20%;
-  background: grey;
   display: flex;
   flex-direction: column;
   
@@ -116,6 +119,7 @@ nav {
   /* text-align: center; */
   
   /* Style box */
+  background: rgba(128, 128, 128, 0.8);
   border-radius: 14px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 1), 0 2px 6px 0 rgba(0, 0, 0, 1);
   left: 6%;
